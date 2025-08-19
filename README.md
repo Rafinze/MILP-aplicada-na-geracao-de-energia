@@ -1,4 +1,4 @@
-Modelos de Otimização com Restrições Ambientais
+
 Este repositório contém os códigos e dados utilizados no projeto de Iniciação Científica sobre a aplicação de restrições ambientais em modelos de otimização. Todas as análises foram implementadas na linguagem de programação Julia.
 
 O objetivo deste documento é servir como um guia para a execução dos códigos e a reprodução dos resultados obtidos.
@@ -6,7 +6,7 @@ O objetivo deste documento é servir como um guia para a execução dos códigos
 📂 Estrutura do Repositório
 O projeto está organizado da seguinte forma:
 
-Códigos sem restrições ambientais/: Contém os modelos iniciais que foram desenvolvidos com base no modelo matemático original, sem a inclusão de restrições ambientais.
+Códigos sem restrições ambientais/: Contém o modelo iniciai que foi desenvolvido com base no modelo matemático original, sem a inclusão de restrições ambientais.
 
 Códigos com restrições ambientais/: Apresenta o modelo final que incorpora as restrições ambientais.
 
@@ -14,7 +14,6 @@ Modelo Simples Programação Dinâmica/: Inclui um modelo automatizado que utili
 
 Dados Kenny/: Armazena os conjuntos de dados brutos (ex: arquivos .csv).
 
-README.md: Este arquivo de instruções.
 
 🚀 Como Executar o Projeto
 Siga os passos abaixo para configurar e executar as análises em sua máquina local.
