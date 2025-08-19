@@ -11,11 +11,10 @@ O projeto está organizado da seguinte forma:
 
 ## Códigos com restrições ambientais: Apresenta o modelo final que incorpora as restrições ambientais.
 
-Modelo Simples Programação Dinâmica/: Inclui um modelo automatizado que utiliza programação dinâmica para múltiplos meses e cenários, considerando o custo futuro. Este código pode servir de base para integrar a programação dinâmica ao modelo com restrições ambientais.
+## Modelo Simples Programação Dinâmica: Inclui um modelo automatizado que utiliza programação dinâmica para múltiplos meses e cenários, considerando o custo futuro. Este código pode servir de base para integrar a programação dinâmica ao modelo com restrições ambientais.
 
-Dados Kenny/: Armazena os conjuntos de dados brutos (ex: arquivos .csv).
+## Dados Kenny: Armazena os conjuntos de dados brutos (ex: arquivos .csv).
 
-README.md: Este arquivo de instruções.
 
 🚀 Como Executar o Projeto
 Siga os passos abaixo para configurar e executar as análises em sua máquina local.
