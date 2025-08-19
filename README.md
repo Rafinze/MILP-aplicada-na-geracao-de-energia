@@ -1,3 +1,4 @@
+Modelos de Otimização com Restrições Ambientais
 
 Este repositório contém os códigos e dados utilizados no projeto de Iniciação Científica sobre a aplicação de restrições ambientais em modelos de otimização. Todas as análises foram implementadas na linguagem de programação Julia.
 
@@ -14,6 +15,7 @@ Modelo Simples Programação Dinâmica/: Inclui um modelo automatizado que utili
 
 Dados Kenny/: Armazena os conjuntos de dados brutos (ex: arquivos .csv).
 
+README.md: Este arquivo de instruções.
 
 🚀 Como Executar o Projeto
 Siga os passos abaixo para configurar e executar as análises em sua máquina local.
@@ -24,38 +26,26 @@ Siga os passos abaixo para configurar e executar as análises em sua máquina lo
 2. Instalação de Pacotes
 O projeto depende de alguns pacotes do Julia. Para instalá-los, abra o terminal do Julia (REPL) e execute os seguintes comandos:
 
-Julia
-
 using Pkg
 
 Pkg.add("DataFrames")
 Pkg.add("CSV")
 Pkg.add("JuMP")
 Pkg.add("Gurobi") # Necessário apenas se for usar o solver Gurobi. O Highs já vem com o JuMP.
+
 3. Configuração do Ambiente
 Baixar o Projeto:
 Clone ou baixe o repositório para a sua máquina local.
 
-Modificar a Leitura dos Arquivos:
-Nos scripts, a leitura de arquivos de dados precisa ser configurada corretamente. Siga estas instruções:
+Ajustar Caminho dos Arquivos de Dados:
+Nos scripts, localize a linha onde os arquivos de dados são lidos. Você precisará atualizar o caminho para que ele corresponda à localização do arquivo em sua máquina.
 
-Mantenha os arquivos de dados em uma pasta dedicada para melhor organização.
+Para obter o caminho, clique com o botão direito sobre o arquivo de dados e selecione "Copiar como caminho". Em seguida, cole-o no código e formate-o com barras normais (/).
 
-Nos códigos, localize a linha onde os arquivos são lidos.
+Exemplo de como o caminho final deve ficar no código:
 
-Copie o caminho absoluto do arquivo de dados em sua máquina (clique com o botão direito sobre o arquivo e selecione "Copiar como caminho").
+dados = CSV.read("C:/Users/SeuUsuario/Documents/Projeto/Dados/dados.csv", DataFrame)
 
-Cole o caminho no local indicado no código e substitua todas as barras invertidas (\) por barras normais (/).
-
-Exemplo:
-
-Julia
-
-// Antes
-dados = CSV.read("C:\\Users\\SeuUsuario\\Projeto\\dados.csv", DataFrame)
-
-// Depois
-dados = CSV.read("C:/Users/SeuUsuario/Projeto/dados.csv", DataFrame)
 4. Executando o Código
 Após a configuração, basta executar o arquivo Julia desejado.
 
@@ -63,10 +53,9 @@ Observação sobre o Solver: Se você não possui uma licença do Gurobi, pode u
 
 Exemplo de como definir o solver:
 
-Julia
-
 using JuMP, HiGHS
 
-// Ao criar o modelo
+# Ao criar o modelo
 model = Model(HiGHS.Optimizer)
-Certifique-se de trocar Gurobi.Optimizer por HiGHS.Optimizer nos scripts.
+
+Lembre-se de substituir Gurobi.Optimizer por HiGHS.Optimizer nos scripts.
