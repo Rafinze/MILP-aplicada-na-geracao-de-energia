@@ -1,4 +1,4 @@
-Modelos de Otimização com Restrições Ambientais
+#Modelos de Otimização com Restrições Ambientais
 
 Este repositório contém os códigos e dados utilizados no projeto de Iniciação Científica sobre a aplicação de restrições ambientais em modelos de otimização. Todas as análises foram implementadas na linguagem de programação Julia.
 
